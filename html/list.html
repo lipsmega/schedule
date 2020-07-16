@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> User List </title>
+		<link href="css/list.css" rel="stylesheet" type="text/css" media="screen"/>
+	</head>
+	<body>
+		<a href="index.php?class=UserList&method=load&initial=a">A</a>
+		<a href="index.php?class=UserList&method=load&initial=b">B</a>
+		<a href="index.php?class=UserList&method=load&initial=c">C</a>
+		<table border=1>
+			<thead>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>Id</td>
+					<td>Name</td>
+					<td>Address</td>
+					<td>Email</td>
+				</tr>
+			</thead>
+			<tbody>
+
+				{items}
+
+			</tbody>
+		</table>
+
+		<button onclick="window.location='index.php?class=UserForm'">
+			<img src="images/insert.svg" style="width: 17px"> New
+		</button>
+
+
+	</body>
+</html>

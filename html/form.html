@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> User Form</title>
+		<link href="css/form.css" rel="stylesheet" type="text/css" media="screen"/>
+	</head>
+	<body>
+
+		<form enctype="multipart/form-data" method="post" action="index.php?class=UserForm&method=save">
+
+			<label>Id</label>
+			<input name="id" readonly="1" type="text" style="width: 30%" value="{id}">
+
+			<label>Name</label>
+			<input name="name" type="text" style="width: 50%" value="{name}">
+
+			<label>Address</label>
+			<input name="address" type="text" style="width: 50%" value="{address}">
+
+			<label>Email</label>
+			<input name="email" type="text" style="width: 25%" value="{email}">
+
+			<input type="submit">
+
+		</form>
+
+		<button onclick="window.location='index.php?class=UserList'">
+			<img src="images/insert.svg" style="width: 17px"> Back
+		</button>
+
+	</body>
+</html>

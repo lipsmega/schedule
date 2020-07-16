@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Phone Form</title>
+		<link href="css/form.css" rel="stylesheet" type="text/css" media="screen"/>
+	</head>
+	<body>
+
+		<form enctype="multipart/form-data" method="post" action="index.php?class=PhoneForm&method=save">
+
+			<label>Id</label>
+			<input name="id" readonly="1" type="text" style="width: 30%" value="{id}">
+
+			
+			<input name="user_id" type="hidden" style="width: 50%" value="{user_id}">
+
+			<label>Phone</label>
+			<input name="phone" type="text" style="width: 50%" value="{phone}">
+
+			<input type="submit">
+
+		</form>
+
+		<button onclick="window.location='index.php?class=PhoneList&method=load&user_id={user_id}'">
+			<img src="images/back.svg" style="width: 17px"> Back
+		</button>
+
+	</body>
+</html>
