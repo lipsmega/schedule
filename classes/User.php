@@ -73,7 +73,7 @@ class User
             $result = $conn->prepare("SELECT * FROM user WHERE email = '{$user['email']}'");
             $result->execute( [ ':email' => $user['email'] ]);
 
-            if($result->fetch())
+            if($result->fetch() && empty($user['id']))
             {
                 $error = 'Theres another user with this email';
                 print $error;
